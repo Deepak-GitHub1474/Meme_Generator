@@ -1,0 +1,77 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: #800080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.troll-face {
+  width: 80px;
+  mix-blend-mode: color-burn;
+}
+
+.title {
+  color: #fff;
+}
+
+.hero-container {
+  margin: 0 1.5rem;
+}
+
+.form-container {
+  display: grid;
+  grid-template: 40px 40px/ 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-container input {
+  outline: none;
+  text-indent: 10px;
+  font-size: 16px;
+}
+
+.form-btn {
+  grid-column: 1/-1;
+  background-color: #800080;
+  color: #fff;
+  font-size: 16px;
+  border: #800080;
+  cursor: pointer;
+}
+
+.meme-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.top-text {
+  position: absolute;
+  top: 4rem;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  word-break: break-all;
+  max-width: 300px;
+}
+
+.bottom-text {
+  position: absolute;
+  bottom: 8rem;
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+  word-break: break-all;
+  max-width: 300px;
+}
+
+.memeImg {
+  width: 350px;
+  height: 400px;
+  margin-top: 2rem;
+}
