@@ -1,8 +1,6 @@
-import "./meme.css"
+import { useState, useEffect } from "react";
 
-import React, { useState, useEffect } from "react";
-
-export default function Hero(props) {
+export default function Hero() {
   let [meme, setMeme] = useState({
     memeImg: "https://i.imgflip.com/30b1gx.jpg",
     topText: "",
@@ -67,9 +65,9 @@ export default function Hero(props) {
         </button>
       </form>
       <section className="meme-container">
+        <img src={meme.memeImg} alt="memeImg" className="memeImg" />
         <p className="top-text">{meme.topText}</p>
         <p className="bottom-text">{meme.bottomText}</p>
-        <img src={meme.memeImg} alt="memeImg" className="memeImg" />
       </section>
     </main>
   );

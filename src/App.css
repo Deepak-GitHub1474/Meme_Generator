@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   width: 100vw;
   height: 80px;
@@ -74,4 +79,30 @@
   width: 350px;
   height: 400px;
   margin-top: 2rem;
+}
+
+@media (max-width: 500px) {
+
+  .form-container {
+    display: grid;
+    grid-template: 40px 40px/ 1fr;
+    gap: 1rem;
+  }
+
+  .form-btn {
+    padding: 10px;
+  }
+
+  .memeImg {
+    width: 280px;
+  }
+
+  .troll-face {
+    width: 70px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+  
 }
